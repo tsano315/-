@@ -47,6 +47,8 @@
     auto-rotate
 
     shadow-intensity="1"
+    
+    id="dragon"
 
     ar
 
@@ -55,6 +57,19 @@
     ar-scale="auto">
 
   </model-viewer>
+
+<script type="module">
+  const dragon = document.querySelector("#dragon");
+
+  dragon.addEventListener("load", () => {
+    const material = dragon.model.materials[0];
+    if (material) {
+      material.pbrMetallicRoughness.setBaseColorFactor(
+        [0.02, 0.25, 0.9, 1]
+      );
+    }
+  });
+</script>
 
 </body>
 
