@@ -38,7 +38,11 @@
 
   <model-viewer
 
-    src="./Meshy_AI_Azure_Frost_Dragon_1121153456_generate.glb"
+    
+
+    src="./Aoki_Dragon_Blue_Gradient.glb"
+    
+  
 
     alt="檍神社 小戸池の龍"
 
@@ -57,19 +61,6 @@
     ar-scale="auto">
 
   </model-viewer>
-
-<script type="module">
-  const dragon = document.querySelector("#dragon");
-
-  dragon.addEventListener("load", () => {
-    const material = dragon.model.materials[0];
-    if (material) {
-      material.pbrMetallicRoughness.setBaseColorFactor(
-        [0.02, 0.25, 0.9, 1]
-      );
-    }
-  });
-</script>
 
 </body>
 
