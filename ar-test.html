@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>檍神社 小戸の池 龍AR試作</title>
+  <script type="module"
+    src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.1.0/model-viewer.min.js">
+  </script>
+  <style>
+    body { margin: 0; background: #eaf4ff; }
+    model-viewer {
+      width: 100vw;
+      height: 100dvh;
+    }
+  </style>
+</head>
+<body>
+  <model-viewer
+    src="./Aoki_Dragon_Richer_Blue_Gradient.glb"
+    alt="小戸の池の青い龍"
+    camera-controls
+    auto-rotate
+    ar
+    ar-modes="scene-viewer quick-look webxr"
+    shadow-intensity="1">
+    <button slot="ar-button"
+      style="position:absolute;bottom:30px;left:20px;padding:15px;">
+      ARで龍を見る
+    </button>
+  </model-viewer>
+</body>
+</html>
